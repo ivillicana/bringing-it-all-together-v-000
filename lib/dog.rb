@@ -4,6 +4,7 @@ class Dog
 
   def initialize (attributes, id=nil)
     attributes.each {|key, value| self.send("#{key}=", value)}
+    @id = id
   end
 
   def self.create_table
